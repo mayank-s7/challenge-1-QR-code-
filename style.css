@@ -4,16 +4,81 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
+  font-family: "outfit", sans-serif;
 }
 
-.attribution {
+/* .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
+} */
 
 body {
-  font-family: "outfit", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #d6e2f0;
+}
+
+footer {
+  text-align: center;
+  margin: 0 1rem;
+  padding: 1rem 0;
+  position: relative;
+  bottom: 0;
+  max-width: 260px;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+footer a {
+  color: #1f3251;
+}
+
+main {
+  margin: 0.5rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  max-width: 320px;
+  height: 500px;
+  padding: 1rem;
+  box-shadow: 0px 1px 3px 10px rbga(0, 0, 0, 0.2);
+}
+
+.card_img {
+  background-image: url(images/image-qr-code.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 290px;
+  border-radius: 10px;
+  display: block;
+}
+
+.card_details {
+  text-align: center;
+  padding: 1.5rem 0.5rem;
+}
+
+.card_details h1 {
+  font-size: 1.45rem;
+  max-width: 100%;
+  margin-bottom: 0.9rem;
+  font-weight: 700;
+  color: #1f3251;
+}
+
+.card_details p {
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #7b879d;
 }
